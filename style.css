@@ -1,0 +1,50 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Display flex */
+nav,
+.nav-title,
+nav ul {
+  display: flex;
+}
+
+/* Navigation bar */
+nav {
+  justify-content: space-between;
+  padding: 1.25em;
+  align-items: center;
+}
+
+.nav-title {
+  font-weight: bold;
+  gap: 0.5em;
+  font-size: 0.85em;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  gap: 2em;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  cursor: pointer;
+}
