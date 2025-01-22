@@ -13,7 +13,8 @@ body {
 /* Display flex */
 nav,
 .nav-title,
-nav ul {
+nav ul,
+.hero {
   display: flex;
 }
 
@@ -47,4 +48,27 @@ a {
 a:hover,
 a:active {
   cursor: pointer;
+}
+
+/* MAIN */
+
+/* Article 1 */
+.hero {
+  background-image: url(images/home/article-image-hero.png);
+  background-size: cover;
+  color: white;
+  flex-direction: column;
+  min-height: 300px;
+  justify-content: flex-end;
+  padding: 1em;
+}
+
+.date {
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.hero h2 {
+  margin: 0.5em 0 1em 0;
+  font-size: 2rem;
 }
