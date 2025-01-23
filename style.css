@@ -14,7 +14,8 @@ body {
 nav,
 .nav-title,
 nav ul,
-.hero {
+.hero,
+.article {
   display: flex;
 }
 
@@ -52,7 +53,7 @@ a:active {
 
 /* MAIN */
 
-/* Article 1 */
+/* Hero section*/
 .hero {
   background-image: url(images/home/article-image-hero.png);
   background-size: cover;
@@ -71,4 +72,43 @@ a:active {
 .hero h2 {
   margin: 0.5em 0 1em 0;
   font-size: 2rem;
+}
+
+/* Blogs section */
+
+.blogs {
+  padding: 2em 1.25em;
+}
+
+.blogs img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+.blogs h2 {
+  color: #141414;
+}
+
+.article {
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.description {
+  color: #505050;
+}
+
+.btn-view-more {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btn-view-more:hover,
+.btn-view-more:active {
+  cursor: pointer;
 }
