@@ -66,6 +66,10 @@ a:active {
   padding: 1em;
 }
 
+.hero p {
+  max-width: 615px;
+}
+
 .date {
   text-transform: uppercase;
   font-size: 0.75em;
@@ -121,7 +125,7 @@ a:active {
 
 .btn-view-more {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 3em auto;
   background-color: transparent;
   border: none;
   font-weight: bold;
@@ -171,4 +175,19 @@ footer {
 
 .copyright {
   color: #d7d7d7;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    background-position: top 30% center;
+    padding: 3em;
+  }
+
+  .blogs {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 2em;
+  }
 }
