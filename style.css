@@ -158,6 +158,10 @@ h3:last-of-type {
   margin-bottom: 3em;
 }
 
+.hidden-article {
+  display: none;
+}
+
 /* Footer */
 footer {
   background-color: #202020;
@@ -189,5 +193,21 @@ footer {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 300px);
     gap: 2em;
+  }
+
+  .hidden-article {
+    display: flex;
+  }
+
+  .full-hero {
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+
+  .full-hero img {
+    width: 110%;
+    align-self: center;
+    max-height: 500px;
+    object-fit: cover;
   }
 }
