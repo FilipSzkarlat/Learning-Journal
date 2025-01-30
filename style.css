@@ -6,8 +6,10 @@
 }
 
 body {
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  max-width: 1200px;
 }
 
 /* Display flex */
@@ -141,6 +143,10 @@ h3:last-of-type {
   text-align: center;
 }
 
+.hidden-article {
+  display: none;
+}
+
 /* ABOUT ME */
 
 .about-me {
@@ -150,7 +156,7 @@ h3:last-of-type {
 }
 
 .about-me img {
-  width: 60%;
+  width: 182px;
   border-radius: 50%;
 }
 
@@ -158,8 +164,10 @@ h3:last-of-type {
   margin-bottom: 3em;
 }
 
-.hidden-article {
-  display: none;
+.narrow-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 /* Footer */
@@ -209,5 +217,30 @@ footer {
     align-self: center;
     max-height: 500px;
     object-fit: cover;
+  }
+
+  .about-me {
+    padding: 0 3em;
+  }
+
+  .flex-row {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    margin-bottom: 1em;
+  }
+
+  .hi-there-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+
+  .about-me p:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .narrow-content-container {
+    margin: 1em 3em 0;
   }
 }
